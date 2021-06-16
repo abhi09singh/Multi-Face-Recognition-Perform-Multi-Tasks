@@ -1,0 +1,9 @@
+            import time
+            import pywhatkit
+            t = time.asctime()
+            hrs = int(t[11:-11])
+            mint= int(t[14:-8])
+            print(t)
+            print(hrs)
+            print(mint)
+            pywhatkit.sendwhatmsg("+919971067161","testing" ,hrs,mint+1)
